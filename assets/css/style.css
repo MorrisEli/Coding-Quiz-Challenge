@@ -1,0 +1,98 @@
+:root{
+    --mainBackground: rgb(100,100,100); 
+    --mainTextColor: #fff; 
+    --btnBackground: rgb(19, 118, 125);
+    --btnBackgroundHover: rgb(115, 3, 152);
+}
+
+body {
+    background: var(--mainBackground) ;
+    color: var(--mainTextColor);
+    min-height: 98vh;
+    margin: 0.5rem;
+    position: relative;
+}
+
+header {
+    align-content: space-between;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+header p {
+    padding: 3px, 10px, 3px, 10px;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh, 15vh, 5vh, 15vw;
+    width: 100%;
+}
+
+main h1 {
+    font-size: 200%;
+    margin: 3vh;
+    text-align: center;
+}
+
+main > button {
+    background: var(--btnBackground);
+    border: 0;
+    border-radius: 7px;
+    color: var(--mainTextColor);
+    font-size: 150%;
+    margin: 3vh;
+    padding: 0 10px 0 10px;
+    width: max-content;
+}
+
+main > div, 
+#instructions{
+    font-size: 125%;
+    text-align: center;
+    padding: 0 15% 0 15%;
+}
+
+main > div {
+    display: none;
+    justify-content: flex-start;
+}
+
+main > div > * {
+    margin: 1rem;
+}
+
+main > ul {
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+main > ul li {
+    background: var(--btnBackground);
+    border: 0;
+    border-radius: 7px;
+    color: var(--mainTextColor);
+    font-size: 150%;
+    margin: 3vh;
+    min-width: max-content;
+    width: max-content;
+}
+
+#submit-highscore-div button:hover,
+#display-highscore-div button:hover,
+body button:hover,
+main > ul li:hover {
+    background: var(--btnBackgroundHover);
+    cursor: pointer;
+}
+
+footer {
+    bottom: 0;
+    height: 5vh;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
