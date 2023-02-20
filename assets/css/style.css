@@ -1,8 +1,8 @@
 :root{
-    --mainBackground: rgb(100,100,100); 
+    --mainBackground: rgb(80, 80, 80); 
     --mainTextColor: #fff; 
-    --btnBackground: rgb(19, 118, 125);
-    --btnBackgroundHover: rgb(115, 3, 152);
+    --btnBackground: rgb(20, 132, 140);
+    --btnBackgroundHover: rgb(19, 117, 124);
 }
 
 body {
@@ -18,6 +18,18 @@ header {
     display: flex;
     height: 100%;
     width: 100%;
+}
+
+header > button {
+    background: var(--btnBackground);
+    border: 0;
+    color: var(--mainTextColor);
+    border-radius: 7px;
+    font-size: 100%;
+    margin: 3vh;
+    padding: 0 10px 0 10px; 
+    width: max-content;
+
 }
 
 header p {
