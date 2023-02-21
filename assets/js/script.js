@@ -174,13 +174,13 @@ function storeScoreAndName() {
         document.querySelector('input').value = '';
         score = 0;
 
-        showHighscores();
+        showHighScores();
     }
 
     return;
 }
 
-function showHighscores() {
+function showHighScores() {
     titleTag.style.display = 'none';
     startBtn.style.display = 'none';
     document.querySelector('header').children[0].style.display = 'none';
@@ -217,19 +217,10 @@ function clearHighScores() {
     return;
 }
 
-function clearHighScores() {
-    document.querySelector('ol').innerHTML = '';
-    window.localStorage.clear();
-
-    setUpGame();
-
-    return;
-}
-
 function init() {
     startBtn.addEventListener('click', startGame);
     answerButtonLst.addEventListener('click', checkAnswer);
-    viewHighScoresBtn.addEventListener('click', showHighscores);
+    viewHighScoresBtn.addEventListener('click', showHighScores);
     clearHighScoresBtn.addEventListener('click', clearHighScores);
     goBackScoreBtn.addEventListener('click', setUpGame);
 
