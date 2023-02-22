@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz Challenge</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <button id="viewHighScoresBtn">View Highscores</button><!--View High score Button-->
-        <p style="display: none;">Time: <span id="timeTag">9999</span></p> <!--time span-->
+        <button id="viewHighscoresBtn">View Highscores</button> <!-- highscores -->
+        <p style="display: none">Time: <span id="timerTag">9999</span></p> <!-- timer -->
     </header>
-    <main>
-        <h1 id="title">Coding Quiz Challenge</h1>
-        <p id="instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penelize your score time by ten seconds.</p><!--Instructions-->
-        <button id="startBtn">Start Quiz!</button> <!--this button starts the quiz-->
+    <main> <!-- questions -->
+        <h1 id="title">Coding Quiz Challenge</h1> 
+        <p id="instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
+        <button id="startBtn">Start Quiz</button> 
         <ul>
-            <!--Answers-->
+            
         </ul>
-        <div id="submit-highscore-div"> <!--submit info for highscore-->
-            <h1>All Done!</h1> <!--Confirmation-->
-            <p>Your final score is <span id="scoreSpan">999</span>.</p><!--High Score Display-->
-            <p>Enter Name: </p> <!--High Score Display-->
-            <input type="text" id="fname" name="fname" value="">
-            <button id="submitHighscoreBtn">Submit</button>
+        <div id="submit-highscore-div"> <!-- submit info -->
+            <h1>All Done!</h1> 
+            <p>Your final score is <span id="scoreSpan">999</span>.</p> 
+            <div id="highscore-input-div"> 
+                <p>Enter Name:</p>
+                <input type="text" id="fname" name="fname" value="">
+                <button id="submitHighscoreBtn">Submit</button>
+            </div>
         </div>
-        <div id="display-highscore-div">
+        <div id="display-highscore-div"> 
             <h1>Highscores</h1>
             <ol>
-                <!--<li> tags-->
+               
             </ol>
-            <button id="goBackBtn">Go Back</button>
-            <button id="clearHighScoresBtn">Clear Highscores</button>
+            <button id="goBackBtn">Go Back</button> 
+            <button id="clearHighscoreBtn">Clear Highscores</button> 
         </div>
     </main>
     <footer>

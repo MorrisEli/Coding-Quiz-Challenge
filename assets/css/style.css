@@ -1,80 +1,72 @@
 :root{
-    --mainBackground: rgb(80, 80, 80); 
-    --mainTextColor: #fff; 
-    --btnBackground: rgb(20, 132, 140);
-    --btnBackgroundHover: rgb(19, 117, 124);
+    --btnBackground: rgb(140, 20, 20);
+    --btnBackgroundHover:rgb(121, 11, 11);
+    --mainBackground: rgb(80, 80, 80);
+    --mainTextColor: #ffffff;
+    --secondaryBackground: rgb(172, 24, 24);
 }
 
 body {
-    background: var(--mainBackground) ;
-    color: var(--mainTextColor);
-    min-height: 98vh;
-    margin: 0.5rem;
     position: relative;
+    margin: 0.5rem;
+    min-height: 98vh;
+    background: var(--mainBackground);
+    color: var(--mainTextColor);
 }
 
 header {
-    align-content: space-between;
     display: flex;
-    height: 100%;
+    align-content: space-between;
+    justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 
-header > button {
+#display-highscore-div > button,
+#highscore-input-div > button,
+header button {
+    text-decoration: none;
     background: var(--btnBackground);
-    border: 0;
     color: var(--mainTextColor);
-    border-radius: 7px;
-    font-size: 100%;
-    margin: 3vh;
-    padding: 0 10px 0 10px; 
-    width: max-content;
-
+    border: 0;
+    border-radius: 7px; 
+    padding: 3px 10px 3px 10px;
 }
 
 header p {
-    padding: 3px, 10px, 3px, 10px;
+    padding: 3px 10px 3px 10px; 
 }
 
 main {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 5vh, 15vh, 5vh, 15vw;
+    align-items: center;
     width: 100%;
+    padding: 5vh 15vw 5vh 15vw;
 }
 
 main h1 {
-    font-size: 200%;
     margin: 3vh;
+    font-size: 200%;
     text-align: center;
+}
+
+main > div,
+#instructions {
+    padding: 0 10% 0 20%;
+    text-align: center;
+    font-size: 125%;
 }
 
 main > button {
+    margin: 3vh;
+    width: max-content;
+    padding: 0 15px 0 15px;
     background: var(--btnBackground);
+    color: var(--mainTextColor);
     border: 0;
     border-radius: 7px;
-    color: var(--mainTextColor);
     font-size: 150%;
-    margin: 3vh;
-    padding: 0 10px 0 10px;
-    width: max-content;
-}
-
-main > div, 
-#instructions{
-    font-size: 125%;
-    text-align: center;
-    padding: 0 15% 0 15%;
-}
-
-main > div {
-    display: none;
-    justify-content: flex-start;
-}
-
-main > div > * {
-    margin: 1rem;
 }
 
 main > ul {
@@ -83,14 +75,24 @@ main > ul {
 }
 
 main > ul li {
-    background: var(--btnBackground);
-    border: 0;
-    border-radius: 7px;
-    color: var(--mainTextColor);
-    font-size: 150%;
     margin: 3vh;
-    min-width: max-content;
     width: max-content;
+    min-width: 10vw;
+    padding: 5px 10px 5px 10px;
+    background: var(--btnBackground);
+    color: var(--mainTextColor);
+    border: 0;
+    border-radius: 7px; 
+    font-size: 150%;
+}
+
+main > div {
+    justify-content: flex-start;
+    display: none;
+}
+
+main > div > * {
+    margin: 1rem;
 }
 
 #submit-highscore-div button:hover,
@@ -102,9 +104,29 @@ main > ul li:hover {
 }
 
 footer {
-    bottom: 0;
-    height: 5vh;
-    text-align: center;
     position: absolute;
+    height: 5vh;
     width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(121, 11, 11);
+
+}
+
+#highscore-input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#highscore-input-div > *{
+    margin: 0.5rem;
+}
+
+#highscore-input-div > p {
+    display: inline;
+}
+
+#highscore-input-div > input {
+    width:30%;
 }
